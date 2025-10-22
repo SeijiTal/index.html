@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crystal Borines</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <video autoplay loop muted playsinline id="bg-video">
+    <source src="vid1.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+
+  <header>
+    <nav>
+      <h1>Crystal Borines</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero fade-in">
+    <h2>Crystal Borines</span></h2>
+
+    <div class="profile-pic-container">
+      <img src="me.jpg" alt="Crystal Borines" class="profile-pic">
+    </div>
+
+    <p>Digital Artist?</p>
+    <div class="socials">
+      <a href="https://www.facebook.com/share/1BWmyJR55s/" target="_blank" rel="noopener">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Portfolio</a>
+    </div>
+  </section>
+
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate digital artist who loves bringing stories to life through my illustrations.
+      I enjoy exploring color, emotion, and detail in every piece I create. My art is a reflection
+      of how I see and feel the world like; softie boys, expressive girlies, full of Emotion Tops and Powerful Sassy Bottom.
+And also, I have Second Male Leads Syndrome:3
+    </p>
+  </section>
+
+  <section id="skills" class="fade-in">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">Digital Illustration</div>
+      <div class="skill-card">Character Design</div>
+      <div class="skill-card">Storyboarding</div>
+    </div>
+  </section>
+
+  <section id="experience" class="fade-in">
+    <h2>Experience</h2>
+    <ul>
+      <li>🎨 Commission works for clients</li>
+      <li>🤝 Collaboration projects with fellow artists</li>
+      <li>🖌️ Free and personal art for skill growth</li>
+    </ul>
+  </section>
+
+  <section id="gallery" class="fade-in">
+    <h2>Art Gallery</h2>
+    <div class="gallery-grid">
+      <img src="1.png" alt="Artwork 1">
+      <img src="2.png" alt="Artwork 2">
+      <img src="3.png" alt="Artwork 3">
+      <img src="4.png" alt="Artwork 4">
+      <img src="5.png" alt="Artwork 5">
+      <img src="6.png" alt="Artwork 6">
+      <img src="7.png" alt="Artwork 7">
+    </div>
+  </section>
+
+  <section id="hobbies" class="fade-in">
+    <h2>Hobbies & Interests</h2>
+    <div class="hobbies-box">
+      <p>Drawing, Reading, Gaming, Spreading LOVE & HATE（〃｀ 3′〃）</p>
+    </div>
+  </section>
+
+  <section id="contact" class="fade-in">
+    <h2>Contact Me</h2>
+    <p>
+      Interested in working together or have a question? Reach out anytime!<br>
+      (+63) 968-<br>
+      <a href="mailto:crystaljaneborines@gmail.com">crystaljaneborines@gmail.com</a>
+    </p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Crystal Borines | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.2 });
+    fadeElements.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
